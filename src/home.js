@@ -1,7 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const HomePage = () => {
-  return null;
+  let history = useHistory();
+  const goToAbout = () => {
+    history.push("/about");
+  };
+  return (
+    <div>
+      Home Page<div onClick={goToAbout}>About Me</div>
+    </div>
+  );
 };
 
 export default HomePage;

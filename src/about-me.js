@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <div>
       About Page
-      <button onClick={returnToHome}>return home</button>
+      <div onClick={returnToHome}>Return to Home</div>
     </div>
   );
 };

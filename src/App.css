@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+#prof-pic {
+  max-width: 20%;
+  height: auto;
+}
+
+a:visited {
+  color: blue
+}
+a:unvisited {
+  color: blue
+}

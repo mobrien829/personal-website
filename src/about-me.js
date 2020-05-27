@@ -27,7 +27,7 @@ const AboutPage = () => {
             <a href="https://www.github.com/mobrien829" className="github">
               Github
             </a>
-            <a href="" className="email">
+            <a href="mailto:mobrien0829@gmail.com" className="email">
               Email me!
             </a>
             <a

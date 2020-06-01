@@ -9,37 +9,38 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import ProfilePic from "./IMG_0808.png";
 
 const useStyles = makeStyles({
   card: { maxWidth: 345 },
   media: { height: 140 },
 });
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  thumbnail,
+  projectName,
+  description,
+  liveDemo,
+  githubUrl,
+}) => {
   const classes = useStyles();
   return (
     <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia className={classes.media} image={ProfilePic} />
+        <CardMedia className={classes.media} image={thumbnail} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Michael O'Brien
+            {projectName}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            project name
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" href={liveDemo}>
           live demo
         </Button>
-        <Button
-          size="small"
-          color="primary"
-          href="https://github.com/mobrien829"
-        >
+        <Button size="small" color="primary" href={githubUrl}>
           github
         </Button>
       </CardActions>

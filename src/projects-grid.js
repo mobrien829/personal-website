@@ -32,7 +32,14 @@ const ProjectGrid = () => {
         />
       </Grid>
       <Grid key={3} item xs={12} sm={6} md={4} lg={4} xl={3}>
-        <ProjectCard />
+        <ProjectCard
+          projectName={"Homely Cooking"}
+          description={
+            "React, Express.js, and MongoDB powered app for sharing and tracking recipes you've made."
+          }
+          githubUrl={""}
+          liveDemo={""}
+        />
       </Grid>
     </Grid>
   );

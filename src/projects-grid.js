@@ -31,7 +31,7 @@ const ProjectGrid = () => {
           }
         />
       </Grid>
-      <Grid key={3} item xs={12} sm={6} md={4} lg={4} xl={3}>
+      {/* <Grid key={3} item xs={12} sm={6} md={4} lg={4} xl={3}>
         <ProjectCard
           projectName={"Homely Cooking"}
           description={
@@ -40,7 +40,7 @@ const ProjectGrid = () => {
           githubUrl={""}
           liveDemo={""}
         />
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };

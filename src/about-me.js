@@ -1,18 +1,12 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import ProfilePic from "./IMG_0808.png";
 import "./App.css";
+import NavBar from "./navbar";
 
 const AboutPage = () => {
-  let history = useHistory();
-
-  const returnToHome = () => {
-    history.push("/");
-  };
   return (
     <div>
-      About Page
-      <div onClick={returnToHome}>Return to Home</div>
+      <NavBar />
       <div className="about-body">
         <div className="bio">
           <div className="profile-pic">
